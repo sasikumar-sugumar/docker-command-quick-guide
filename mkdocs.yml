@@ -1,0 +1,7 @@
+site_name: Docker-Commands-Quick-Guide
+pages:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
+
+

@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to quick-guide\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nInstall Docker\n\n\n\n\nsudo yum update -y\n - Update the repository\n\n\nsudo yum install -y docker -y\n - Install docker\n\n\nsudo service docker start\n - Start the docker host\n\n\nsudo usermod -a -G docker ec2-user\n - add the list to truster users\n\n\ndocker info\n - print docker info to confirm\n\n\n\n\nDocker Clean Up Containers\n\n\ndocker rmi $(docker images -q) # remove all the images\ndocker rmi -f $(docker images -q)` # force remove all the images\n\n\n\nBasic Commands\n\n\n\n\ndocker ps\n - List all running contianers.\n\n\ndocker ps -a\n - List all running and stopped contianers.\n\n\ndocker images\n - List all docker images.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-quick-guide", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to quick-guide"
+        }, 
+        {
+            "location": "/#install-docker", 
+            "text": "sudo yum update -y  - Update the repository  sudo yum install -y docker -y  - Install docker  sudo service docker start  - Start the docker host  sudo usermod -a -G docker ec2-user  - add the list to truster users  docker info  - print docker info to confirm", 
+            "title": "Install Docker"
+        }, 
+        {
+            "location": "/#docker-clean-up-containers", 
+            "text": "docker rmi $(docker images -q) # remove all the images\ndocker rmi -f $(docker images -q)` # force remove all the images", 
+            "title": "Docker Clean Up Containers"
+        }, 
+        {
+            "location": "/#basic-commands", 
+            "text": "docker ps  - List all running contianers.  docker ps -a  - List all running and stopped contianers.  docker images  - List all docker images.", 
+            "title": "Basic Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "", 
+            "title": "About"
+        }
+    ]
+}
